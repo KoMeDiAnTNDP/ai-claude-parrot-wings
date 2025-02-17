@@ -2,11 +2,11 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
-import { HomePage } from './components/HomePage';
 import { useSelector } from 'react-redux';
 import { RootState } from './store/store';
 import LoginScreen from './features/auth/LoginScreen';
 import RegisterScreen from './features/auth/RegisterScreen';
+import HomeScreen from './features/home/HomeScreen';
 
 const PrivateRoute: React.FC<{ children: React.ReactElement }> = ({ children }) => {
   const token = useSelector((state: RootState) => state.auth.token);
@@ -29,7 +29,7 @@ const App = () => {
             path="/home"
             element={
               <PrivateRoute>
-                <HomePage />
+                <HomeScreen />
               </PrivateRoute>
             }
           />
