@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { User, Transaction } from '../types';
+import { User, Transaction, LoginRequest, LoginResponse } from '../types';
 import { RootState } from './store';
 
 export const api = createApi({
@@ -21,12 +21,12 @@ export const api = createApi({
         body: credentials,
       }),
     }),
-    login: builder.mutation<{ id_token: string }, { email: string; password: string }>({
-      query: (credentials) => ({
-        url: '/sessions/create',
-        method: 'POST',
-        body: credentials,
-      }),
+    login: builder.mutation<LoginResponse, LoginRequest>({
+			query: (credentials) => ({
+				url: '/sessions/create',
+				method: 'POST',
+				body: credentials,
+			}),
     }),
     getUserInfo: builder.query<{ user_info_token: User }, void>({
       query: () => '/api/protected/user-info',

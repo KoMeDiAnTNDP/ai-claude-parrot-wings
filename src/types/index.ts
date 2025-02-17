@@ -12,3 +12,12 @@ export interface User {
     amount: number;
     balance: number;
   }
+  
+  export interface LoginResponse {
+    id_token: string;
+  }
+  
+  export interface LoginRequest {
+    email: string;
+    password: string;
+  }
