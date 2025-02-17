@@ -2,11 +2,11 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
-import { RegisterForm } from './components/RegisterForm';
 import { HomePage } from './components/HomePage';
 import { useSelector } from 'react-redux';
 import { RootState } from './store/store';
 import LoginScreen from './features/auth/LoginScreen';
+import RegisterScreen from './features/auth/RegisterScreen';
 
 const PrivateRoute: React.FC<{ children: React.ReactElement }> = ({ children }) => {
   const token = useSelector((state: RootState) => state.auth.token);
@@ -24,7 +24,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginScreen />} />
-          <Route path="/register" element={<RegisterForm />} />
+          <Route path="/register" element={<RegisterScreen />} />
           <Route
             path="/home"
             element={
