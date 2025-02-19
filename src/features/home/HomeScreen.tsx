@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { useGetUserInfoQuery, useGetTransactionsQuery } from '../../store/api';
 import { TransactionModal } from './TransactionModal';
-import { format } from 'date-fns';
 import { useDispatch } from 'react-redux';
 import { logout } from '../../store/authSlice';
 import { useNavigate } from 'react-router-dom';
