@@ -13,46 +13,18 @@ module.exports = {
     			sm: 'calc(var(--radius) - 4px)'
     		},
     		colors: {
-    			background: 'hsl(var(--background))',
-    			foreground: 'hsl(var(--foreground))',
-    			card: {
-    				DEFAULT: 'hsl(var(--card))',
-    				foreground: 'hsl(var(--card-foreground))'
-    			},
-    			popover: {
-    				DEFAULT: 'hsl(var(--popover))',
-    				foreground: 'hsl(var(--popover-foreground))'
-    			},
-    			primary: {
-    				DEFAULT: 'hsl(var(--primary))',
-    				foreground: 'hsl(var(--primary-foreground))'
-    			},
-    			secondary: {
-    				DEFAULT: 'hsl(var(--secondary))',
-    				foreground: 'hsl(var(--secondary-foreground))'
-    			},
-    			muted: {
-    				DEFAULT: 'hsl(var(--muted))',
-    				foreground: 'hsl(var(--muted-foreground))'
-    			},
-    			accent: {
-    				DEFAULT: 'hsl(var(--accent))',
-    				foreground: 'hsl(var(--accent-foreground))'
-    			},
-    			destructive: {
-    				DEFAULT: 'hsl(var(--destructive))',
-    				foreground: 'hsl(var(--destructive-foreground))'
-    			},
-    			border: 'hsl(var(--border))',
-    			input: 'hsl(var(--input))',
-    			ring: 'hsl(var(--ring))',
-    			chart: {
-    				'1': 'hsl(var(--chart-1))',
-    				'2': 'hsl(var(--chart-2))',
-    				'3': 'hsl(var(--chart-3))',
-    				'4': 'hsl(var(--chart-4))',
-    				'5': 'hsl(var(--chart-5))'
-    			}
+				primary: '#6750A4',
+				'primary-container': '#EADDFF',
+        		'on-primary': '#FFFFFF',
+        		'on-primary-container': '#21005D',
+        		secondary: '#625B71',
+        		'secondary-container': '#E8DEF8',
+        		'on-secondary': '#FFFFFF',
+        		'on-secondary-container': '#1D192B',
+        		background: '#FFFBFE',
+        		'on-background': '#1C1B1F',
+        		surface: '#FFFBFE',
+        		'on-surface': '#1C1B1F',
     		}
     	}
     },

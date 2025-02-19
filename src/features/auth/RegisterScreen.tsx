@@ -54,11 +54,11 @@ const RegisterScreen = () => {
   }
 
   return (
-    <div className="flex overflow-hidden flex-col h-screen bg-[#EADDFF]">
+    <div className="flex overflow-hidden flex-col h-screen bg-primary-container">
       <Header />
       <div className="flex overflow-hidden flex-col flex-1 justify-center items-center w-full text-base tracking-wide max-md:max-w-full">
         <form onSubmit={handleSubmit(onSubmit)} className="flex overflow-hidden flex-col justify-center px-5 py-2.5 max-w-full w-[623px]">
-          <h2 className="text-2xl tracking-normal leading-none text-black">
+          <h2 className="text-2xl tracking-normal leading-none text-primary">
             Become a part of something bigger!
           </h2>
           {inputFields.map((field) => (
