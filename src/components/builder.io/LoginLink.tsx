@@ -10,7 +10,7 @@ const LoginLink: React.FC<LoginLinkProps> = ({ onClick }) => {
       <button
         type="button"
         onClick={onClick}
-        className="flex-1 gap-2 self-stretch px-3 py-2.5 size-full text-slate-500 hover:underline focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-opacity-50"
+        className="flex-1 gap-2 self-stretch px-3 py-2.5 size-full text-[#6750A4] hover:underline focus:outline-none focus:ring-2 focus:ring-[#6750A4] focus:ring-opacity-50"
       >
         Already have an account?
       </button>

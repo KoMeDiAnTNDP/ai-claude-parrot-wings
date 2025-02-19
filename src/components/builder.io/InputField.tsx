@@ -14,7 +14,7 @@ const InputField: React.FC<InputFieldProps> = ({ label, type, register, name, er
 
   return (
     <div className="flex flex-col mt-5 w-full text-black whitespace-nowrap rounded min-h-[56px] max-md:max-w-full">
-      <div className="flex flex-col flex-1 w-full rounded border border-solid border-slate-500 max-md:max-w-full">
+      <div className="flex flex-col flex-1 w-full rounded border border-solid border-[#6750A4] max-md:max-w-full">
         <div className="flex flex-1 gap-1 items-start py-1 pl-4 rounded size-full max-md:max-w-full">
           <div className="flex flex-col flex-1 shrink justify-center py-3 w-full basis-0 min-h-[48px] min-w-[240px] max-md:max-w-full">
             <label htmlFor={id} className="sr-only">{label}</label>
