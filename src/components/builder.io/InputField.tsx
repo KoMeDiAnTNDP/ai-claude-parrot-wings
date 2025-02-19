@@ -25,7 +25,7 @@ const InputField: React.FC<InputFieldProps> = ({ label, type, register, name, er
               placeholder={label}
               aria-label={label}
               aria-invalid={error ? "true" : "false"}
-              className="flex-1 shrink self-stretch w-full max-md:max-w-full bg-transparent text-primary"
+              className="flex-1 shrink self-stretch w-full max-md:max-w-full bg-transparent text-on-primary-container outline-none placeholder:text-[#1F1F1F90]"
             />
           </div>
         </div>
